@@ -23,18 +23,18 @@
 
       <nav class="navbar">
         <a href="#home">home</a>
-        <a href="#about">about</a>
         <a href="#menu">menu</a>
-        <a href="#review">review</a>
+        <a href="#about">about</a>
         <a href="#contact">contact</a>
+        <a href="#review">review</a>
         <a href="#blogs">blogs</a>
       </nav>
 
       <div>
-        <h2 class="number">
+        <h2>
           <i class="fa-solid fa-phone"></i>
-          <span class="no">+91</span
-          ><a href="checkout.html" target="_blank"> 6354072840</a>
+          <span class="number">+91</span
+          ><a href="checkout.html" target="_blank" class="no"> 6354072840</a>
         </h2>
       </div>
     </header>
@@ -52,46 +52,16 @@
           will be happy to take your order and answer any questions you may
           have.
         </p>
-        <a href="checkout.html" target="_blank" class="btn">order now</a>
-      </div>
-    </section>
-
-    <!-- ------------------------------------------ about section ------------------------------------  -->
-    <section class="about" id="about">
-      <h1 class="heading"><span>about</span> us</h1>
-
-      <div class="row">
-        <div class="image">
-          <img src="images/aboutbg.jpg" alt="" />
-        </div>
-
-        <div class="content">
-          <h3>what makes our food special?</h3>
-          <p>
-            At our restaurant, we take pride in the quality and taste of our
-            food. Our menu features a wide range of delicious dishes that are
-            carefully prepared using the freshest ingredients available. From
-            our savory entrees to our mouth-watering desserts, every item on our
-            menu is crafted with great care and attention to detail. Our chefs
-            are passionate about creating unique and flavorful combinations that
-            will tantalize your taste buds and leave you wanting more.
-            Additionally, we strive to cater to a variety of dietary needs and
-            preferences, offering vegetarian, vegan, and gluten-free options on
-            our menu. Our commitment to using high-quality ingredients and our
-            dedication to crafting each dish with care and attention is what
-            sets us apart from other restaurants. We believe that every customer
-            deserves a memorable dining experience, and we work hard to make
-            that a reality with every dish we serve
-          </p>
-          <a href="#" class="btn">learn more</a>
-        </div>
+        <a href="#menu" class="btn">order now</a>
       </div>
     </section>
 
     <!-- ------------------------------------------- Menu -------------------------------------------  -->
     <section class="menu" id="menu">
       <h1 class="heading">our <span>menu</span></h1>
-
+      <div class="t">
+        <a href="checkout.html" target="_blank" class="btn">order now</a>
+      </div>
       <div class="box-container">
         <div class="box">
           <img src="images/burger(2).jpg" alt="" />
@@ -346,6 +316,84 @@
           </div>
         </div>
       </div>
+      <div class="b">
+        <a href="checkout.html" target="_blank" class="btn">order now</a>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------ about section ------------------------------------  -->
+    <section class="about" id="about">
+      <h1 class="heading"><span>about</span> us</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/aboutbg.jpg" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>what makes our food special?</h3>
+          <p>
+            At our restaurant, we take pride in the quality and taste of our
+            food. Our menu features a wide range of delicious dishes that are
+            carefully prepared using the freshest ingredients available. From
+            our savory entrees to our mouth-watering desserts, every item on our
+            menu is crafted with great care and attention to detail. Our chefs
+            are passionate about creating unique and flavorful combinations that
+            will tantalize your taste buds and leave you wanting more.
+            Additionally, we strive to cater to a variety of dietary needs and
+            preferences, offering vegetarian, vegan, and gluten-free options on
+            our menu. Our commitment to using high-quality ingredients and our
+            dedication to crafting each dish with care and attention is what
+            sets us apart from other restaurants. We believe that every customer
+            deserves a memorable dining experience, and we work hard to make
+            that a reality with every dish we serve
+          </p>
+          <a href="#" class="btn">learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------ contact section -----------------------------------  -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
+
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18937.63071170822!2d72.53918332712328!3d23.70104529142468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c4fe0be5bfbab%3A0xfc8dd1ffd166b43b!2sVisnagar%2C%20Gujarat%20384315!5e1!3m2!1sen!2sin!4v1673158131034!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <form action="https://formspree.io/f/mayzpkwr" method="POST">
+          <h3>contact</h3>
+          <div class="inputbox">
+            <span class="fas fa-user"></span>
+            <input
+              type="text"
+              placeholder="username"
+              name="username"
+              required
+            />
+          </div>
+          <div class="inputbox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="Email" name="email" required />
+          </div>
+          <div class="messagebox">
+            <span class="fas fa-message"></span>
+            <textarea
+              name="message"
+              cols="60"
+              rows="10"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+          <input type="submit" value="send" class="btn" />
+        </form>
+      </div>
     </section>
 
     <!-- ------------------------------------------ review section ------------------------------------  -->
@@ -394,49 +442,6 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- ------------------------------------------ contact section -----------------------------------  -->
-    <section class="contact" id="contact">
-      <h1 class="heading"><span>contact</span> us</h1>
-
-      <div class="row">
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18937.63071170822!2d72.53918332712328!3d23.70104529142468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c4fe0be5bfbab%3A0xfc8dd1ffd166b43b!2sVisnagar%2C%20Gujarat%20384315!5e1!3m2!1sen!2sin!4v1673158131034!5m2!1sen!2sin"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-
-        <form action="https://formspree.io/f/mayzpkwr" method="POST">
-          <h3>contact</h3>
-          <div class="inputbox">
-            <span class="fas fa-user"></span>
-            <input
-              type="text"
-              placeholder="username"
-              name="username"
-              required
-            />
-          </div>
-          <div class="inputbox">
-            <span class="fas fa-envelope"></span>
-            <input type="email" placeholder="Email" name="email" required />
-          </div>
-          <div class="messagebox">
-            <span class="fas fa-message"></span>
-            <textarea
-              name="message"
-              cols="60"
-              rows="10"
-              placeholder="Enter your message"
-              required
-            ></textarea>
-          </div>
-          <input type="submit" value="send" class="btn" />
-        </form>
       </div>
     </section>
 
