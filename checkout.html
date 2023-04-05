@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- ----------------------- custom css file -----------------  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="checkout" id="checkout">
+      <a href="index.html" class="fa-solid fa-arrow-left btn back"></a>
+      <h1 class="heading"><span>Check</span>Out</h1>
+
+      <div class="row">
+        <form action="https://formspree.io/f/mayzpkwr" method="POST">
+          <div class="messagebox">
+            <span class="fa-solid fa-burger dish"></span>
+            <textarea
+              name="order"
+              cols="60"
+              rows="10"
+              placeholder="What Dish You Want?"
+              required
+            ></textarea>
+          </div>
+          <div class="inputbox">
+            <span class="fas fa-user"></span>
+            <input
+              type="text"
+              placeholder="username"
+              name="username"
+              required
+            />
+          </div>
+          <div class="inputbox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="Email" name="email" required />
+          </div>
+          <div class="inputbox">
+            <span class="fa-solid fa-phone"></span>
+            <input
+              type="text"
+              placeholder="Mobile No."
+              name="Mobile"
+              required
+            />
+          </div>
+          <div class="messagebox">
+            <span class="fa-sharp fa-solid fa-location-dot"></span>
+            <textarea
+              name="address"
+              cols="60"
+              rows="10"
+              placeholder="Address"
+              required
+            ></textarea>
+          </div>
+          <input type="submit" value="CheckOut" class="btn" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

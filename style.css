@@ -107,12 +107,16 @@ section {
 }
 
 .header .number {
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+.header .number a {
   color: white;
   font-size: 2rem;
 }
 
 .header .no {
-  color: var(--main-color);
+  color: white;
   font-size: 2rem;
 }
 
@@ -485,6 +489,79 @@ section {
 .credit-names {
   display: flex;
   flex-direction: column;
+}
+
+/* --------------------------------- checkout section -----------------------  */
+
+.checkout .back {
+  border-bottom: var(--border);
+  position: fixed;
+}
+
+.checkout .row {
+  display: flex;
+  background: var(--black);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.checkout .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.checkout .row form h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.checkout .row form .inputbox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--bg);
+  border: var(--border);
+}
+
+.checkout .row form .inputbox span {
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.checkout .row form .inputbox input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+}
+
+.checkout .row form .messagebox {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--bg);
+  border: var(--border);
+}
+
+.checkout .row form .messagebox span {
+  color: #fff;
+  font-size: 2rem;
+  padding: 2.3rem 0 0 2rem;
+}
+
+.checkout .row form .messagebox textarea {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
 }
 
 /* ----------------------------------- media queries ---------------------  */
